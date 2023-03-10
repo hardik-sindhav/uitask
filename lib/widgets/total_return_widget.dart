@@ -11,7 +11,7 @@ class TotalReturnWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        margin:  EdgeInsets.symmetric(horizontal: 2.h,vertical: 2.h),
+        margin: EdgeInsets.symmetric(horizontal: 2.h, vertical: 2.h),
         height: 23.h,
         width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
@@ -31,24 +31,44 @@ class TotalReturnWidget extends StatelessWidget {
             Positioned(
                 top: 2.h,
                 left: 4.h,
-                child: Text("Total Return",style: TextStyle(fontSize: 14.sp,fontWeight: FontWeight.w500,color: blackColor),)
-            ),
+                child: Text(
+                  "Total Return",
+                  style: TextStyle(
+                      fontSize: 14.sp,
+                      fontWeight: FontWeight.w500,
+                      color: blackColor),
+                )),
             Positioned(
                 top: 5.h,
                 left: 4.h,
                 child: Row(
                   children: [
-                    Text("₹-8.3K",style: TextStyle(fontSize: 16.sp,fontWeight: FontWeight.w600,color: Colors.red),),
-                    SizedBox(width: 1.h,),
-                    Text("(-14.22%)",style: TextStyle(fontSize: 12.sp,fontWeight: FontWeight.w600,color: Colors.red),)
+                    Text(
+                      "₹-8.3K",
+                      style: TextStyle(
+                          fontSize: 16.sp,
+                          fontWeight: FontWeight.w600,
+                          color: Colors.red),
+                    ),
+                    SizedBox(
+                      width: 1.h,
+                    ),
+                    Text(
+                      "(-14.22%)",
+                      style: TextStyle(
+                          fontSize: 12.sp,
+                          fontWeight: FontWeight.w600,
+                          color: Colors.red),
+                    )
                   ],
-                )
-            ),
-
+                )),
             Positioned(
                 top: 2.h,
                 right: 4.h,
-                child: SvgPicture.asset("assets/images/arrow_right_yellow.svg",height: 6.h,)),
+                child: SvgPicture.asset(
+                  "assets/images/arrow_right_yellow.svg",
+                  height: 6.h,
+                )),
             Positioned(
                 top: 4.h,
                 right: 6.5.h,
@@ -64,32 +84,60 @@ class TotalReturnWidget extends StatelessWidget {
             Positioned(
                 top: 13.h,
                 left: 4.h,
-                child: SvgPicture.asset("assets/images/rupee.svg",height: 8.h,)),
+                child: SvgPicture.asset(
+                  "assets/images/rupee.svg",
+                  height: 8.h,
+                )),
             Positioned(
                 top: 14.65.h,
                 left: 9.h,
                 child: Column(
                   children: [
-                    Text("Invested",style: TextStyle(fontSize: 10.sp,fontWeight: FontWeight.normal,color: grayColor),),
-                    Text("29.33K",style: TextStyle(fontSize: 14.sp,fontWeight: FontWeight.w600,color: darkBlackColor),)
+                    Text(
+                      "Invested",
+                      style: TextStyle(
+                          fontSize: 10.sp,
+                          fontWeight: FontWeight.normal,
+                          color: grayColor),
+                    ),
+                    Text(
+                      "29.33K",
+                      style: TextStyle(
+                          fontSize: 14.sp,
+                          fontWeight: FontWeight.w600,
+                          color: darkBlackColor),
+                    )
                   ],
-                )
-            ),
+                )),
             Positioned(
                 top: 13.h,
                 left: 22.h,
-                child: SvgPicture.asset("assets/images/rupee.svg",height: 8.h,)),
+                child: SvgPicture.asset(
+                  "assets/images/rupee.svg",
+                  height: 8.h,
+                )),
             Positioned(
                 top: 14.65.h,
                 left: 27.h,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Current",style: TextStyle(fontSize: 10.sp,fontWeight: FontWeight.normal,color: grayColor),),
-                    Text("25.56K",style: TextStyle(fontSize: 14.sp,fontWeight: FontWeight.w600,color: darkBlackColor),)
+                    Text(
+                      "Current",
+                      style: TextStyle(
+                          fontSize: 10.sp,
+                          fontWeight: FontWeight.normal,
+                          color: grayColor),
+                    ),
+                    Text(
+                      "25.56K",
+                      style: TextStyle(
+                          fontSize: 14.sp,
+                          fontWeight: FontWeight.w600,
+                          color: darkBlackColor),
+                    )
                   ],
-                )
-            ),
+                )),
           ],
         ),
       ),
