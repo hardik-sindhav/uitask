@@ -68,7 +68,7 @@ class _MyInvestmentPageState extends State<MyInvestmentPage>
           child: SingleChildScrollView(
             child: Column(
               children: [
-                 SizedBox(
+                SizedBox(
                   height: 2.h,
                 ),
                 const MyInvestmentListView(),

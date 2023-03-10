@@ -10,7 +10,7 @@ class CustomBannerWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin:  EdgeInsets.symmetric(horizontal: 2.h),
+      margin: EdgeInsets.symmetric(horizontal: 2.h),
       height: 8.h,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
@@ -33,8 +33,7 @@ class CustomBannerWidget extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(left: 2.h, top: 3.h),
             child: Text("3Y BM FD at 7.2% p.a Check all rates",
-                style: TextStyle(color: blackColor, fontSize: 10.sp
-                )),
+                style: TextStyle(color: blackColor, fontSize: 10.sp)),
           ),
           Positioned(
             right: 4.h,

@@ -15,7 +15,7 @@ class _CategoryWidgetState extends State<CategoryWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding:  EdgeInsets.symmetric(horizontal: 2.h),
+      padding: EdgeInsets.symmetric(horizontal: 2.h),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [

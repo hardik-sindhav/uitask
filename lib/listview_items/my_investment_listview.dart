@@ -26,17 +26,17 @@ class MyInvestmentListView extends StatelessWidget {
     return Container(
       height: 15.h,
       width: MediaQuery.of(context).size.width,
-      margin:  EdgeInsets.symmetric(horizontal: 2.h, vertical: 1.h),
+      margin: EdgeInsets.symmetric(horizontal: 2.h, vertical: 1.h),
       decoration: BoxDecoration(
         border: Border.all(color: yellowColor),
         color: yellowShadeColor,
         borderRadius: BorderRadius.circular(10),
       ),
       child: Padding(
-        padding:  EdgeInsets.symmetric(horizontal: 2.h),
+        padding: EdgeInsets.symmetric(horizontal: 2.h),
         child: Column(
           children: [
-             SizedBox(
+            SizedBox(
               height: 2.h,
             ),
             Row(
@@ -61,8 +61,7 @@ class MyInvestmentListView extends StatelessWidget {
                   style: TextStyle(
                       fontWeight: FontWeight.w500,
                       color: textColor ?? CupertinoColors.activeGreen,
-                      fontSize: 11.sp
-                  ),
+                      fontSize: 11.sp),
                 ),
               ],
             ),
@@ -129,7 +128,7 @@ class MyInvestmentListView extends StatelessWidget {
                 ),
               ],
             ),
-             SizedBox(
+            SizedBox(
               height: 1.h,
             ),
           ],

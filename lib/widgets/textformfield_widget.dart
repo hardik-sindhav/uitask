@@ -12,21 +12,18 @@ class TextFormFieldWidget extends StatelessWidget {
     return TextFormField(
       cursorColor: grayColor,
       decoration: InputDecoration(
-          prefixIconConstraints:  BoxConstraints(
+          prefixIconConstraints: BoxConstraints(
             maxHeight: 2.h,
           ),
           prefixIcon: Padding(
-            padding:  EdgeInsets.symmetric(horizontal: 1.h),
+            padding: EdgeInsets.symmetric(horizontal: 1.h),
             child: SvgPicture.asset(
               'assets/images/search.svg',
               allowDrawingOutsideViewBox: true,
             ),
           ),
           hintText: "Search 3000+ mutual funds",
-          hintStyle: TextStyle(
-            color: grayColor,
-            fontSize: 12.sp
-          ),
+          hintStyle: TextStyle(color: grayColor, fontSize: 12.sp),
           border: OutlineInputBorder(
             borderSide: BorderSide.none,
             borderRadius: BorderRadius.circular(2.h),

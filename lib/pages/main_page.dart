@@ -15,8 +15,8 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  PageController pageController=PageController();
-  List<Widget> pages=[
+  PageController pageController = PageController();
+  List<Widget> pages = [
     const HomePage(),
     const DiscoverPage(),
     const PortfolioPage(),
@@ -33,7 +33,7 @@ class _MainPageState extends State<MainPage> {
         physics: const NeverScrollableScrollPhysics(),
         onPageChanged: (value) {
           setState(() {
-            index=value;
+            index = value;
           });
         },
         children: pages,
@@ -43,31 +43,32 @@ class _MainPageState extends State<MainPage> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            itemsView(itemColor: index == 0 ? blackColor : grayColor,
+            itemsView(
+              itemColor: index == 0 ? blackColor : grayColor,
               voidCallback: () {
                 setState(() {
-                  index=0;
+                  index = 0;
                   pageController.jumpToPage(index);
                 });
               },
             ),
             itemsView(
-                text: 'Discover',
-                icon: "assets/images/search.svg",
-                itemColor: index == 1 ? blackColor : grayColor,
-            voidCallback: () {
-              setState(() {
-                index=1;
-                pageController.jumpToPage(index);
-              });
-            },
+              text: 'Discover',
+              icon: "assets/images/search.svg",
+              itemColor: index == 1 ? blackColor : grayColor,
+              voidCallback: () {
+                setState(() {
+                  index = 1;
+                  pageController.jumpToPage(index);
+                });
+              },
             ),
             itemsView(
                 text: 'Portfolio',
                 icon: "assets/images/portfolio.svg",
                 voidCallback: () {
                   setState(() {
-                    index=2;
+                    index = 2;
                     pageController.jumpToPage(index);
                   });
                 },
@@ -77,7 +78,7 @@ class _MainPageState extends State<MainPage> {
                 icon: "assets/images/profile.svg",
                 voidCallback: () {
                   setState(() {
-                    index=3;
+                    index = 3;
                     pageController.jumpToPage(index);
                   });
                 },
@@ -104,7 +105,7 @@ class _MainPageState extends State<MainPage> {
           ),
           Text(
             text ?? "Home",
-            style: TextStyle(color: itemColor,fontSize: 10.sp),
+            style: TextStyle(color: itemColor, fontSize: 10.sp),
           ),
           const SizedBox(
             height: 5,

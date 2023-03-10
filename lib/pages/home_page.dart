@@ -34,7 +34,7 @@ class _HomePageState extends State<HomePage> {
             child: Row(
               mainAxisSize: MainAxisSize.max,
               children: [
-                 SizedBox(
+                SizedBox(
                   width: 3.h,
                 ),
                 Expanded(
@@ -47,7 +47,7 @@ class _HomePageState extends State<HomePage> {
                   width: 7,
                 ),
                 Container(
-                  padding:  EdgeInsets.all(0.8.h),
+                  padding: EdgeInsets.all(0.8.h),
                   height: 4.h,
                   width: 4.h,
                   decoration: const BoxDecoration(
@@ -71,7 +71,7 @@ class _HomePageState extends State<HomePage> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-               SizedBox(
+              SizedBox(
                 height: 2.h,
               ),
               Visibility(
@@ -84,12 +84,16 @@ class _HomePageState extends State<HomePage> {
                     },
                   )),
               GestureDetector(
-                  onTap: () => Navigator.push(context, MaterialPageRoute(builder:  (context) => const MyInvestmentPage(),)),
+                  onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const MyInvestmentPage(),
+                      )),
                   child: const TotalReturnWidget()),
               Align(
                   alignment: Alignment.topLeft,
                   child: Padding(
-                    padding:  EdgeInsets.only(left: 2.h, bottom: 2.h),
+                    padding: EdgeInsets.only(left: 2.h, bottom: 2.h),
                     child: Text(
                       "Category",
                       style: TextStyle(
@@ -100,8 +104,7 @@ class _HomePageState extends State<HomePage> {
                   )),
               const CategoryWidget(),
               Padding(
-                padding:
-                     EdgeInsets.symmetric(horizontal: 2.h, vertical: 2.h),
+                padding: EdgeInsets.symmetric(horizontal: 2.h, vertical: 2.h),
                 child: Row(
                   children: [
                     Text(
@@ -119,7 +122,10 @@ class _HomePageState extends State<HomePage> {
                     const SizedBox(
                       width: 5,
                     ),
-                    SvgPicture.asset("assets/images/arrow_right.svg",height: 2.h,),
+                    SvgPicture.asset(
+                      "assets/images/arrow_right.svg",
+                      height: 2.h,
+                    ),
                   ],
                 ),
               ),
